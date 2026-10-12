@@ -1,0 +1,44 @@
+{
+  "description": "Standard wiring from BL-UsbMACH-V210 manual pages 5-8: five enabled axes, active-low step/direction, Enable1 and Output1-4 active-low. Input assignments follow the manual screenshot; installed switches unverified. X: 818 steps/mm, user measured 10.0 mm for a negative 10 mm request with calipers. A/B: manual example 640 steps/unit, calibration pending. Feed 60 units/min and acceleration 10 units/s^2 are test settings. Y and Z provisionally use 818: user observed approximately 10.2 mm for 10 mm requests; fine tuning deferred.",
+  "identification_report": "1919001919001919000000000000000000000000000017000015000000000000000000000000000000000000000000000000000000001f1f1f101f1f001fba62",
+  "ack_report": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002",
+  "pin_map_report": "00020406080103050709000e00000000000a0b0c0d0000000000000000000000000000000000000082070000820700000000000000000000000000000000000f",
+  "axes": [
+    {
+      "steps_per_unit": 818,
+      "feed_units_min": 60,
+      "acceleration_units_s2": 10
+    },
+    {
+      "steps_per_unit": 818,
+      "feed_units_min": 60,
+      "acceleration_units_s2": 10
+    },
+    {
+      "steps_per_unit": 818,
+      "feed_units_min": 60,
+      "acceleration_units_s2": 10
+    },
+    {
+      "steps_per_unit": 640,
+      "feed_units_min": 60,
+      "acceleration_units_s2": 10
+    },
+    {
+      "steps_per_unit": 640,
+      "feed_units_min": 60,
+      "acceleration_units_s2": 10
+    }
+  ],
+  "tuning_flags": [
+    0,
+    0
+  ],
+  "outputs_mask": 1920,
+  "planner_limits": {
+    "max_rate_counts_s": 1000,
+    "max_acceleration_counts_s2": 10000,
+    "max_move_counts": 10000,
+    "max_line_seconds": 30
+  }
+}
